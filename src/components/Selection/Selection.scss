@@ -1,0 +1,182 @@
+.Selection-container {
+    background-color: #363636;
+    color: white;
+    padding: 20% 13%;
+
+    #conA {
+        visibility: hidden;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+    }
+
+    #conB {
+        visibility: hidden;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+    }
+
+    #conC {
+        visibility: hidden;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+    }
+
+    .selection-matter-container {
+        .selection-title {
+            font-size: 15px;
+            font-weight: bold;
+            color: #9b9b9b;
+        }
+
+        .selection-heading {
+            color: white;
+            font-size: 44px;
+            line-height: 60px;
+        }
+    }
+
+    @keyframes selectionFlipper {
+        0% {
+            transform: rotateY(180deg);
+        }
+
+        100% {
+            transform: rotateY(360deg);
+        }
+    }
+
+
+    .greenBg {
+        background-image: url('https://jevelin.shufflehound.com/single-product/wp-content/uploads/sites/29/2018/03/Group-8211-copy-2.jpg?id=600');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .purpleBg {
+        background-image: url('https://jevelin.shufflehound.com/single-product/wp-content/uploads/sites/29/2018/03/Group-8211-copy-3.jpg?id=600');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .goldBg {
+        background-image: url('https://jevelin.shufflehound.com/single-product/wp-content/uploads/sites/29/2018/03/Group-82111-copy-4.jpg?id=598');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .green {
+        color: #99ffee;
+    }
+
+    .purple {
+        color: #cea9ff;
+    }
+
+    .gold {
+        color: #f3b560;
+    }
+
+    .selection-image-container {
+
+        .each-image-container {
+            margin: 5% 0%;
+            height: 65vh;
+            width: 100%;
+
+
+            .selection-item-type {
+                margin-top: 50px;
+                font-size: 14px;
+                margin-bottom: 2%;
+            }
+
+            .selection-color {
+                margin-top: 0%;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .selection-cost {
+                font-size: 21px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .selection-button-container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .selection-button {
+            padding: 20px 40px;
+            border-radius: 50px;
+            border-color: white;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .Selection-container {
+
+        .selection-image-container {
+            .each-image-container {
+                height: 30vh;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .Selection-container {
+        padding: 6%;
+
+        .selection-image-container {
+            display: flex;
+            justify-content: space-between;
+
+            .each-image-container {
+                width: 32%;
+                height: 32vh;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    .Selection-container {
+
+        padding: 2%;
+
+        .selection-matter-container {
+            padding-top: 5%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            .selection-heading {
+                margin-top: 0%;
+                width: 41%;
+            }
+
+        }
+
+        .selection-image-container {
+            display: flex;
+            justify-content: space-between;
+
+            .each-image-container {
+                width: 33%;
+                height: 56vh;
+
+                .selection-color {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}

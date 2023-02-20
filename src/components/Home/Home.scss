@@ -1,0 +1,433 @@
+$border: 1px solid none;
+@keyframes animatedBackground {
+    from {
+      background-position: 0 100%;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  }
+.Home-container {
+    animation: animatedBackground 10s linear infinite alternate;
+    height: 100vh;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #363636;
+    color: white;
+    padding: 5%;
+    background-size: cover;
+    background-image: url('https://jevelin.shufflehound.com/single-product/wp-content/uploads/sites/29/2018/03/Ellipse-974-copy-4.png');
+    background-position: 50% 50%;
+    background-repeat: repeat-x;
+    background-size: 80%;
+    display: flex;
+    background-repeat: repeat-x;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 0%;
+    font-size: 40px;
+}
+
+.home-matter-container {
+    margin-top: 15%;
+    text-align: start;
+    border: $border;
+}
+
+.lifestyle,
+.smart,
+.watch {
+    font-size: 1em;
+    margin: 0%;
+
+}
+
+.lifestyle-container {
+    animation-name: revealLifeStyle;
+    animation-duration: 2s;
+    overflow: hidden;
+    animation-iteration-count: 1;
+
+    .lifestyle {
+        animation-name: slideIn;
+    }
+}
+
+.nxt-lifestyle-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .smart-container {
+        width: auto;
+        animation-name: revealSmart;
+        animation-duration: 2s;
+        overflow: hidden;
+        animation-iteration-count: 1;
+    }
+
+    .watch-container {
+        // border: 1px solid red;
+        animation-name: revealWatch;
+        width: 0px;
+        animation-duration: 1.5s;
+        overflow: hidden;
+        animation-iteration-count: 1;
+        width: 50%;
+    }
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes revealSmart {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 0%;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes revealLifeStyle {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 0%;
+    }
+
+    100% {
+        width: 375px;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
+
+    20% {
+        margin-left: -800px;
+    }
+
+    35% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes revealWatch {
+    0% {
+        width: 0%;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        width: 50%;
+
+    }
+
+    100% {
+        width: 50%;
+
+    }
+}
+
+
+.home-matter-heading {
+    color: #ffffff;
+    font-size: 0.30em;
+    font-weight: bold;
+}
+
+.home-matter {
+    color: #b2aabf;
+    font-size: 0.28em;
+}
+
+.home-image-container {
+    width: 100%;
+    height: 45vh;
+    border: $border;
+    overflow: hidden;
+}
+
+.home-image {
+    width: 100%;
+    animation-name: bounceInRight;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes revealWatchImage {
+    0% {
+        width: 0%;
+    }
+
+    20% {
+        width: 50%;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    // 60% {
+    //     width: 80%;
+    // }
+    70% {
+        width: 75%;
+    }
+
+    // 85%{
+    //     width:100%;
+    // }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes bounceInRight {
+    0% {
+        transform: translateX(1000px);
+    }
+
+    60% {
+        transform: translateX(-30px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.watch {
+    color: #994fff;
+
+}
+
+@media only screen and (min-width: 425px) {
+    .Home-container {
+        padding: 10%;
+        padding-bottom: 0%;
+        font-size: 40px;
+        height: 110vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .home-matter-container {
+            .nxt-lifestyle-container {
+
+                .smart-container {
+                    //   border: 1px solid green;
+                    width: 50%;
+                }
+
+                .watch-container {
+                    width: 40%;
+                }
+            }
+
+            .lifestyle,
+            .smart {
+                font-size: 1.3em;
+            }
+
+            .home-matter-heading {
+                margin-top: 12%;
+            }
+
+            .home-matter {
+                font-size: 0.35em;
+                width: 90%;
+                border: $border;
+            }
+        }
+
+        .home-image-container {
+            width: 80%;
+            height: 38vh;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .Home-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .home-matter-container {
+            width: 50%;
+            margin-top: 10%;
+            font-size: 40px;
+
+            .nxt-lifestyle-container {
+                width: 100%;
+
+                // border: 1px solid red;
+                .smart-container {
+                    width: 50%;
+                    // border: 1px solid red;
+                }
+
+                .watch-container {
+                    width: 50%;
+                }
+            }
+
+            .lifestyle,
+            .smart,
+            .watch {
+                font-size: 1.3em;
+            }
+
+            .home-matter-heading {
+                margin-top: 9%;
+                font-size: 0.4em;
+            }
+
+            .home-matter {
+                font-size: 0.35em;
+                width: 85%;
+                line-height: 21px;
+            }
+        }
+
+        .home-image-container {
+            width: 52%;
+            height: 37vh;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .Home-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 40px;
+        padding: 0%;
+
+        .home-matter-container {
+            width: 50%;
+            margin-top: 3%;
+
+            .nxt-lifestyle-container {
+                .smart-container {
+                    width: 44%;
+                    // border: 1px solid red;
+                }
+            }
+
+            .lifestyle,
+            .smart,
+            .watch {
+                font-size: 1.8em;
+            }
+
+            .home-matter-heading {
+                font-size: 0.5em;
+                margin-top: 10%;
+            }
+
+            .home-matter {
+                font-size: 0.45em;
+                width: 80%;
+            }
+        }
+
+        .home-image-container {
+            width: 40%;
+            height: 60vh;
+            overflow: hidden;
+
+            .home-image {
+                width: 135%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    .Home-container {
+        padding: 5%;
+        height: 100vh;
+        padding: 0% 5%;
+        display: flex;
+        justify-content: space-evenly;
+
+        .home-matter-container {
+            margin-top: 0%;
+            font-size: 40px;
+            width: 45%;
+            margin-left: 5%;
+
+            .nxt-lifestyle-container {
+                .smart-container {
+                    width: 40%;
+                    // border: 1px solid red;
+                }
+            }
+
+            .lifestyle,
+            .smart,
+            .watch {
+                font-size: 1.8em;
+            }
+
+            .home-matter-heading {
+                font-size: 0.35em;
+            }
+
+            .home-matter {
+                font-size: 0.3em;
+                width: 65%;
+            }
+        }
+
+        .home-image-container {
+            height: 80vh;
+
+            .home-image {
+                width: 90%;
+            }
+        }
+    }
+}

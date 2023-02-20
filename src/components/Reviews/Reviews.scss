@@ -1,0 +1,146 @@
+.Reviews-container {
+    background-image: url('https://jevelin.shufflehound.com/single-product/wp-content/uploads/sites/29/2018/03/Vector-Smart-Object-2copy-2.jpg?id=642');
+    background-size: cover;
+
+    .reviews-title-container {
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .reviews-title {
+            font-size: 45px;
+            width: 50%;
+        }
+    }
+
+    // .ant-carousel .slick-prev,
+    // .ant-carousel .slick-next {
+    //   color: red;
+    //   font-size: 20px;
+    // position: relative;
+    // }
+
+    // .ant-carousel .slick-prev:hover,
+    // .ant-carousel .slick-next:hover,
+    // .ant-carousel .slick-prev:focus,
+    // .ant-carousel .slick-next:focus {
+    //   color: red;
+    // }
+
+
+
+    .review-curosal-container {
+
+        .review-each-curosal-slide {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .review-curosal-image {
+                border-radius: 50px;
+                margin: auto;
+            }
+
+            .review-curosal-matter {
+                padding: 2% 6%;
+                font-size: 20px;
+                color: #8d8698;
+            }
+
+            .review-curosal-name {
+                color: #7d1eff;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .symbol {
+                margin-top: 2%;
+                color: #8d8698;
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    .Reviews-container {
+        .reviews-title-container {
+            .reviews-title {
+                width: 70%;
+            }
+        }
+
+        .review-curosal-container {
+
+            .review-each-curosal-slide {
+                text-align: center;
+
+                .review-curosal-matter {
+                    margin: auto;
+                    padding: 10%;
+
+                }
+
+                .review-curosal-name {
+                    margin: 0%;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .Reviews-container {
+        .reviews-title-container {
+            height: 25vh;
+
+            .reviews-title {
+                width: 40%;
+            }
+        }
+
+        .review-curosal-container {
+            .review-each-curosal-slide {
+                .review-curosal-matter {
+                    padding: 4%;
+                    width: 80%;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+@media only screen and (min-width: 1366px) {
+    .Reviews-container {
+        .reviews-title-container {
+            height: 25vh;
+
+            .reviews-title {
+                width: 30%;
+            }
+        }
+
+        .review-curosal-container {
+            .review-each-curosal-slide {
+                padding-top: 2%;
+                padding-bottom: 2%;
+                .review-curosal-matter {
+                    padding: 4%;
+                    width: 40%;
+                }
+                .review-curosal-name{
+                    margin: 0%;
+                }
+            }
+        }
+
+    }
+}

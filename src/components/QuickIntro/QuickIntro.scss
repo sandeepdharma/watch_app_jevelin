@@ -1,0 +1,135 @@
+.QuickIntro-container {
+    background-image: url('https://jevelin.shufflehound.com/single-product/wp-content/uploads/sites/29/2018/03/Ellipse-974-copy-22-2.jpg?id=599');
+    background-size: cover;
+    height: 100vh;
+    padding: 20% 10%;
+    padding-bottom: 30%;
+
+    .quickintro-matter-container {
+        text-align: start;
+
+        .quickintro-title {
+            color: #aca3ba;
+            font-weight: bold;
+        }
+
+        .quickintro-heading {
+            font-size: 40px;
+            line-height: 55px;
+
+            .highlight {
+                color: #7d1ef7;
+            }
+        }
+
+        .quickintro-matter {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    .quickintro-video-container {
+        .video {
+            width: 100%;
+        }
+
+        .play-video-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://jevelin.shufflehound.com/single-product/wp-content/uploads/sites/29/2018/03/Screenshot_21-1024x577.jpg');
+            background-color: cover;
+            height: 40vh;
+            margin-bottom: 10px;
+
+            .play-button {
+                color: #7d1ef7;
+                background-color: aliceblue;
+                font-size: 45px;
+                border-radius: 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    .QuickIntro-container {
+        padding-bottom: 25%;
+
+        .quickintro-matter-container {
+            .quickintro-heading {
+                width: 80%;
+            }
+
+            .quickintro-matter {
+                width: 90%;
+                padding: 5% 3%;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .QuickIntro-container {
+        height: auto;
+        padding-top: 7%;
+        padding-bottom: 5%;
+
+        .quickintro-matter-container {
+            .quickintro-heading {
+                width: 90%;
+            }
+
+            .quickintro-matter {
+                padding: 0%;
+                padding-bottom: 5%;
+            }
+        }
+
+        .quickintro-video-container {
+            height: 60vh;
+            padding: 0%;
+
+            .video {
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .QuickIntro-container {
+        .quickintro-video-container {
+            height: 40vh;
+            .play-video-container {
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1366px) {
+    .QuickIntro-container {
+        padding-left: 14%;
+
+        .quickintro-matter-container {
+            .quickintro-heading {
+
+                margin-top: 1%;
+                width: 50%;
+            }
+
+            .quickintro-matter {
+                margin-top: 1%;
+                width: 50%;
+                padding-bottom: 3%;
+            }
+        }
+
+        .quickintro-video-container {
+            height: 80vh;
+        }
+    }
+}

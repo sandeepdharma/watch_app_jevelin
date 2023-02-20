@@ -1,0 +1,149 @@
+.navbar-with-background {
+    background-color: #363636;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    z-index: 1;
+
+    // width: 100%;
+    .navbar-menu-icons {
+        color: white;
+    }
+
+    .each-menu-option {
+        color: white;
+    }
+
+    .menu-item {
+        text-decoration: none;
+        color: white;
+    }
+
+    .active {
+        text-decoration: underline;
+    }
+}
+
+.navbar-with-white {
+    top: -10px;
+    position: fixed;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    z-index: 1;
+    background: white;
+    width: 90%;
+    border: 1px solid #e3e3e3;
+
+    .navbar-menu-icons {
+        color: black;
+    }
+
+    .each-menu-option {
+        color: black;
+    }
+
+    .menu-item {
+        text-decoration: none;
+        color: black;
+    }
+
+    .active {
+        text-decoration: underline;
+    }
+}
+
+.navbar-menu-icons {
+    display: flex;
+    align-items: center;
+
+    .hamburger-icon {
+        font-size: 25px;
+    }
+
+    .navbar-menu-options-container {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .navbar-with-white {
+        height: 14vh;
+        padding: 0% 5%;
+    }
+
+    .navbar-with-background {
+        height: 14vh;
+        padding: 0% 5%;
+    }
+}
+
+@media only screen and (min-width:1366px) {
+    .navbar-menu-icons {
+        width: 65%;
+
+        .hamburger-icon {
+            display: none;
+        }
+
+        .navbar-menu-options-container {
+            width: 100%;
+            display: block;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .each-menu-option {
+                width: 50%;
+                display: flex;
+                justify-content: space-between;
+                text-decoration: none;
+                font-size: 13px;
+                font-weight: 600;
+                font-family: "Montserrat";
+            }
+
+            .navbar-submit-container {
+                width: 25%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                .ant-badge {
+
+                    .ant-badge-count {
+                        background-color: #7d1eff;
+                        font-size: 10px;
+
+                    }
+
+                    .cart-icon span {
+                        width: 10px;
+                        height: 15px;
+                    }
+                }
+
+                .basket-icon {
+                    color: #8d8696;
+                    font-size: 20px;
+                }
+
+                .navbar-submit-button {
+                    padding: 15px 30px;
+                    border-radius: 25px;
+                    background-color: #7d1eff;
+                    color: white;
+                    font-weight: bold;
+                    border-width: 0px;
+                }
+            }
+
+        }
+    }
+
+}

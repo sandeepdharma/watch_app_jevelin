@@ -1,0 +1,174 @@
+$border: 1px solid none;
+
+.Experience-container {
+    height: auto;
+    @keyframes experienceFlipper {
+        0% {
+            transform: rotateX(180deg);
+        }
+
+        100% {
+            transform: rotateX(360deg);
+        }
+    }
+    .experience-image-container {
+        border: $border;
+        width: 100%;
+        height: auto;
+
+        .experience-image {
+            width: 95%;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+    }
+
+    .experience-matter-container {
+        padding: 10% 5%;
+        border: $border;
+        height: auto;
+
+        .experience-matter-title-container {
+            text-align: start;
+
+            .experience-title {
+                color: #aca3ba;
+                font-weight: 600;
+            }
+
+            .experience-heading {
+                font-size: 40px;
+            }
+        }
+
+        .each-experience-main-container {
+            border: $border;
+
+            .each-experience-container {
+                border: $border;
+                text-align: start;
+
+                .each-experience-heading {
+                    border: $border;
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+
+                .each-experience-matter {
+                    border: $border;
+                    line-height: 25px;
+                }
+
+                .each-experience-progress-bar-container {
+                    border: $border;
+
+                    .ant-progress-text {
+                        font-weight: bold;
+                        // font-size: 15px;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 425px) {
+    .Experience-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .experience-image-container {
+
+            .experience-image {
+                width: 80%;
+            }
+        }
+
+        .experience-matter-container {
+            width: 80%;
+            padding: 5%;
+        }
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .Experience-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+
+        .experience-image-container {
+            height: auto;
+
+            .experience-image {
+                width: 50%;
+            }
+        }
+
+        .experience-matter-container {
+            width: 55%;
+            padding: 5%;
+        }
+
+        .each-experience-main-container {
+            .each-experience-container {
+                .each-experience-matter {
+                    width: 68%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .Experience-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 10% 5%;
+
+        .experience-image-container {
+            width: 50%;
+
+            .experience-image {
+                width: 80%;
+            }
+        }
+
+        .experience-matter-container {
+            width: 50%;
+
+        }
+    }
+}
+
+@media only screen and (min-width:1366px) {
+    .Experience-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 0% 5%;
+
+        .experience-image-container {
+            width: 50%;
+
+            .experience-image {
+                width: 80%;
+            }
+        }
+
+        .experience-matter-container {
+            width: 50%;
+
+        }
+    }
+}

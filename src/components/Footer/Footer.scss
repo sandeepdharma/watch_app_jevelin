@@ -1,0 +1,214 @@
+.Footer-container {
+    background-color: #363636;
+    color: white;
+    padding-top: 20%;
+    padding-right: 5%;
+    padding-left: 5%;
+    height: auto;
+
+    .footer-addressing-container {
+        .footer-about-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            text-align: start;
+
+           
+
+            .footer-about-matter {
+                color: #a1a1a1;
+            }
+        }
+
+        .footer-cards-container {
+            // border: 1px solid blue;
+            width: 80%;
+
+            .footer-cards-icon-container {
+                // border: 1px solid red;
+
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+
+                .footer-card-icon {
+                    font-size: 27px;
+                }
+            }
+
+            .footer-cards-matter-container {
+                margin-top: 18px;
+                // border: 1px solid red;
+                display: flex;
+                justify-content: space-between;
+                width: 78%;
+                align-items: center;
+                color: #a1a1a1;
+
+                .footer-lock-icon {
+                    font-size: 13px;
+                }
+
+                .footer-cards-matter {
+
+                    margin: 0%;
+                    font-size: 13px;
+                }
+            }
+
+        }
+
+        .footer-options-container {
+            text-align: start;
+
+            .footer-options-heading {
+                color: #f4f4f4;
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 24px;
+                margin-top: 24px;
+            }
+
+            .footer-options {
+                color: #a1a1a1;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .footer-copyright-container {
+        margin-top: 15%;
+        padding-bottom: 10%;
+        width: 100%;
+        // border: 1px solid red;
+        font-size: 12px;
+        line-height: 20px;
+
+        .footer-copyright {
+            color: #a1a1a1;
+
+            .copyright {
+                text-align: center;
+
+
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    .Footer-container {
+        padding-left: 13%;
+
+        .footer-addressing-container {
+            .footer-about-container {
+                .footer-about-matter {
+                    width: 80%;
+                }
+            }
+        }
+
+        .footer-copyright-container {
+            width: 80%;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .Footer-container {
+        padding-left: 13%;
+
+        .footer-addressing-container {
+            .footer-cards-container {
+                width: 40%;
+            }
+        }
+
+        .footer-copyright-container {
+            width: 80%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .Footer-container {
+        padding-left: 13%;
+
+        .footer-addressing-container {
+            // border: 1px solid red;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .footer-about-container {
+                width: 30%;
+                // border: 1px solid red;
+
+                .footer-about-matter {
+                    width: 100%;
+                }
+
+                .footer-cards-container {
+                    width: 100%;
+                }
+            }
+
+            .footer-options-container {
+                width: 25%;
+            }
+        }
+
+        .footer-copyright-container {
+            width: 100%;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1366px) {
+    .Footer-container {
+        padding: 3%;
+        height: 60vh;
+
+        .footer-addressing-container {
+            // border: 1px solid red;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .footer-about-container {
+                width: 30%;
+                // border: 1px solid red;
+
+                .footer-about-matter {
+                    width: 100%;
+                }
+
+                .footer-cards-container {
+                    width: 80%;
+                }
+                .footer-cards-matter-container{
+                    width: 60%;
+                }
+            }
+
+            .footer-options-container {
+                width: 15%;
+                // border: 1px solid red;
+            }
+        }
+
+        .footer-copyright-container {
+            width: 100%;
+            margin: 0%;
+            height: 5vh;
+            padding: 0%;
+            padding-top: 10%;
+        }
+    }
+}
